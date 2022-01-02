@@ -39,7 +39,7 @@ module.exports = class RankCard {
     this.opacityReputation = "1";
     this.opacityNoBadges = "0.4";
     this.textLevel = "lvl {level}";
-    this.textNeededXp = "{current}/{needed} for next rank";
+    this.textNeededXp = "{current}/{needed} para o próximo nível";
     this.textReputation = "+{reputation} rep";
     for(let i = badges[0]; i <= badges[1]; i++) this[`badge${i}`] = null;
   }
