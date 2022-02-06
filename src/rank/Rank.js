@@ -19,8 +19,8 @@ module.exports = class RankCard {
     this.addonRankName = true;
     this.addonBadges = true;
     this.colorBackground = "#000000";
-    this.colorLevelBox = "#ff7b4b";
-    this.colorReputationBox = "#ff7b4b";
+    this.colorLevelBox = "#542096";
+    this.colorReputationBox = "#542096";
     this.colorLevel = "#ffffff";
     this.colorRank = "#ffffff";
     this.colorRankName = "#ffffff";
@@ -40,7 +40,7 @@ module.exports = class RankCard {
     this.opacityNoBadges = "0.4";
     this.textLevel = "lvl {level}";
     this.textNeededXp = "{current}/{needed} para o próximo nível";
-    this.textReputation = "+{reputation} rep";
+    this.textReputation = "+ {reputation} rep";
     for(let i = badges[0]; i <= badges[1]; i++) this[`badge${i}`] = null;
   }
 
