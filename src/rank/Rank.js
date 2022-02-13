@@ -285,12 +285,15 @@ module.exports = class RankCard {
       240 + 50 + 50 + 25,
       80 + 45 + 10 + 40
     );
+    let my_gradient=ctx.createLinearGradient(0, 0, 170, 0);
+    my_gradient.addColorStop(0, "#20b2aa");
+    my_gradient.addColorStop(1, "#800080");
     ctx.closePath();
     ctx.clip();
     ctx.fillStyle = this.colorBackgroundBar;
     ctx.globalAlpha = this.opacityBackgroundBar;
     ctx.fillRect(240 + 50 + 50, 80 + 45 + 10 + 40, 700, 50);
-    ctx.fillStyle = this.colorBar;
+    ctx.fillStyle = my_gradient;
     ctx.globalAlpha = 1;
     const percent = (100 * this.xpCurrent) / this.xpNeeded;
     const progress = (percent * 700) / 100;
